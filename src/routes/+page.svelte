@@ -1,2 +1,7 @@
-<h1>Welcome to SvelteKit</h1>
-<p>Visit <a href="https://svelte.dev/docs/kit">svelte.dev/docs/kit</a> to read the documentation</p>
+<script lang="ts">
+	import InputNumber from "$lib/components/page/input/input-number.svelte";
+
+	let tesValue: number = $state(0);
+</script>
+
+<InputNumber bind:realValue={tesValue} />
